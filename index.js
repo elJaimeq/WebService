@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
       </style>
     </head>
     <body>
-      <h1>Holaaaa Lola, Jaguar yuuuuuuuu!</h1>
+      <h1>Tu madre tiene una poya</h1>
     </body>
     </html>
   `);
