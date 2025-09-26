@@ -17,11 +17,11 @@ app.get('/', (req, res) => {
           align-items: center;
           height: 100vh;
           margin: 0;
-          background-color: #f0f0f0; /* Un color de fondo suave */
+          background-color: #0400ffff; /* Un color de fondo suave */
           font-family: sans-serif;
         }
         h1 {
-          color: steelblue; /* El color que pediste */
+          color: black; /* El color que pediste */
           font-size: 3rem;  /* Un poco más grande */
         }
       </style>
