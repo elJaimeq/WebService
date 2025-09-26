@@ -11,23 +11,41 @@ app.get('/', (req, res) => {
       <title>Mi Web Service</title>
       <style>
         body {
-          /* Usamos Flexbox para centrar vertical y horizontalmente */
           display: flex;
           justify-content: center;
           align-items: center;
           height: 100vh;
           margin: 0;
-          background-color: #0400ffff; /* Un color de fondo suave */
+          background-color: #0400ff; /* Corregido a un hex válido */
           font-family: sans-serif;
         }
         h1 {
-          color: black; /* El color que pediste */
-          font-size: 3rem;  /* Un poco más grande */
+          color: black;
+          font-size: 3rem;
+          text-align: center;
+          white-space: pre-wrap; /* Preserva saltos de línea */
         }
       </style>
     </head>
     <body>
-      <h1>Tu madre tiene una poya</h1>
+      <h1>
+Tu madre tiene una polla
+que ya la quisiera yo
+me dio pena por tu padre
+el día en que se enteró
+que fue la noche de bodas
+¿Quién se iba a imaginar?
+que iba a ser a tu padre
+al que lo iban a encular
+transexuaaaal!
+transexuaaaal!
+tu madre tiene muy grande el pene
+no sé por qué
+nunca más te podrás sentar
+como te coja por detrás
+tu madre tiene muy grande el pene
+es un transexuaaaal!
+      </h1>
     </body>
     </html>
   `);
