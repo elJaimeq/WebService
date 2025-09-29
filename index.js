@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
     </head>
     <body>
       <h1>
-hola soy jaime me gusta los hotdogs del marro jijijija
+hola soy Jose Alfredo Tirado Jaime (22030047) me gusta los hotdogs del marro jijijija
       </h1>
     </body>
     </html>

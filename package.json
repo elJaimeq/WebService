@@ -1,7 +1,7 @@
 {
   "name": "hola-mundo-render",
   "version": "1.0.0",
-  "description": "hola soy jaime me gusta los hotdogs del marro jijijija",
+  "description": "hola soy Jose Alfredo Tirado Jaime (22030047) me gusta los hotdogs del marro jijijija",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
