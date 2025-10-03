@@ -3,6 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
+  const nombre = req.query.nombre || 'Invitado'; // Obtiene el parámetro 'nombre' o usa 'Invitado' por defecto
   res.send(`
     <!DOCTYPE html>
     <html lang="es">
@@ -29,7 +30,7 @@ app.get('/', (req, res) => {
       </style>
     </head>
     <body>
-      <h1>Ola lola, jaguar yu, te voy a saludar por tu nombre</h1>
+      <h1>¡Hola, ${nombre}! Bienvenido a mi web service</h1>
     </body>
     </html>
   `);
@@ -39,7 +40,7 @@ app.get('/saludar/:nombre', (req, res) => {
   const nombreRecibido = req.params.nombre;
 
   const respuestaJson = {
-    saludo: `¡Hola, ${nombreRecibido}!`, // Corregido con backticks
+    saludo: `¡Hola, ${nombreRecibido}!`,
     parametro_recibido: nombreRecibido,
     timestamp: new Date().toISOString()
   };
@@ -47,5 +48,5 @@ app.get('/saludar/:nombre', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Servidor escuchando en el puerto ${PORT}`); // Corregido con backticks
+  console.log(`Servidor escuchando en el puerto ${PORT}`);
 });
