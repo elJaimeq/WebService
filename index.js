@@ -34,16 +34,18 @@ app.get('/', (req, res) => {
     </html>
   `);
 });
+
 app.get('/saludar/:nombre', (req, res) => {
   const nombreRecibido = req.params.nombre;
 
   const respuestaJson = {
-    saludo: ¡Hola, ${nombreRecibido}!,
+    saludo: `¡Hola, ${nombreRecibido}!`, // Corregido con backticks
     parametro_recibido: nombreRecibido,
-    timestamp: new Date().toISOString() 
+    timestamp: new Date().toISOString()
   };
   res.json(respuestaJson);
 });
+
 app.listen(PORT, () => {
-  console.log(Servidor escuchando en el puerto ${PORT});
+  console.log(`Servidor escuchando en el puerto ${PORT}`); // Corregido con backticks
 });
