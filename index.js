@@ -10,32 +10,40 @@ app.get('/', (req, res) => {
       <meta charset="UTF-8">
       <title>Mi Web Service</title>
       <style>
-        body {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          margin: 0;
-          background-color: #0400ff; /* Corregido a un hex válido */
-          font-family: sans-serif;
+        body { 
+          font-family: sans-serif; 
+          text-align: center; 
+          padding-top: 50px; 
+          background-color: #f4f4f4; 
+          color: #333;
+        }
+        code { 
+          background-color: #e1e1e1; 
+          padding: 4px 6px; 
+          border-radius: 4px; 
+          font-family: monospace;
         }
         h1 {
-          color: black;
-          font-size: 3rem;
-          text-align: center;
-          white-space: pre-wrap; /* Preserva saltos de línea */
+          color: #0056b3;
         }
       </style>
     </head>
     <body>
-      <h1>
-hola soy Jose Alfredo Tirado Jaime (22030047) me gusta los hotdogs del marro jijijija
-      </h1>
+      <h1>Ola lola, jaguar yu, te voy a saludar por tu nombre</h1>
     </body>
     </html>
   `);
 });
+app.get('/saludar/:nombre', (req, res) => {
+  const nombreRecibido = req.params.nombre;
 
+  const respuestaJson = {
+    saludo: ¡Hola, ${nombreRecibido}!,
+    parametro_recibido: nombreRecibido,
+    timestamp: new Date().toISOString() 
+  };
+  res.json(respuestaJson);
+});
 app.listen(PORT, () => {
-  console.log(`Servidor escuchando en el puerto ${PORT}`);
+  console.log(Servidor escuchando en el puerto ${PORT});
 });
